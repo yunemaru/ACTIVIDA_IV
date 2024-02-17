@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLA DE MULTIPLICAR</title>
+    <link rel="stylesheet" href="5tarea.css">
+</head>
+<body>
+    <div id="box">
+    <label for="num">Ingresa numero:</label>
+    <input type="text" id="num">
+    <br>
+    <button onclick="generarTabla()">Tabla: </button>
+    <div id="resultado"></div>
+
+    <script>
+        function generarTabla(){
+            const num = parseInt(document.getElementById("num").value);
+            const resultadoDiv = document.getElementById("resultado");
+            let tabla = "";
+
+            for(let i=1; i<=10;i++){
+                const multiplicacion=num *i;
+                tabla +=`${num}x${i}=${multiplicacion}<br>`;
+            }
+
+            resultadoDiv.innerHTML = tabla;
+        }
+    </script>
+    </div>
+</body>
+</html>

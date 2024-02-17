@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="11tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1>Calculadora basica</h1>
+        <label for="num1">Ingrese un numero:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="num2">Ingrese segundo numero:</label>
+        <input type="number" id="num2">
+        <br>
+        <br><h2>1.-sumar, 2.-restar, 3.-multiplicar, 4.-dividir</h2>
+        <label for="ope">A Selecciona que operacion quieres realizar:</label>
+        <input type="number" id="ope">
+        <br>
+        <br>
+        <button onclick="Calculadora()">calcular</button>
+        <div id="resultado"></div>
+    
+        <script>
+            function Calculadora(){
+                const num1 = parseInt(document.getElementById("num1").value);
+                const num2 = parseInt(document.getElementById("num2").value);
+                const ope = parseInt(document.getElementById("ope").value);
+                const resultadoDiv = document.getElementById("resultado");
+
+                if(ope === 1){
+                    var suma = num1 + num2;
+                    resultado.textContent=`El resultado es: ${suma}`;
+                }else if(ope === 2){
+                    var resta = num1 - num2;
+                    resultado.textContent=`El resultado es: ${resta}`;
+                }else if(ope === 3){
+                    var multi = num1 * num2;
+                    resultado.textContent=`El resultado es: ${multi}`;
+                }else if(ope === 4){
+                    var div = num1 / num2;
+                    resultado.textContent=`El resultado es: ${div}`;
+                }
+            }
+        </script>
+        </div>
+</body>
+</html>

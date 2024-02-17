@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTEO</title>
+</head>
+<body>
+    <div id="box">
+    <h1>Conteo</h1>
+    <button id="contadorBoton">Haz clic aquí</button>
+    <p id="contador">0</p>
+    <script>
+        const botonContador = document.getElementById("contadorBoton");
+        const contador = document.getElementById("contador");
+
+        let clics = 0;
+
+        botonContador.addEventListener("click", () => {
+            clics++;
+            contador.textContent = `Clics: ${clics}`;
+        });
+    </script>
+    </div>
+</body>
+</html>

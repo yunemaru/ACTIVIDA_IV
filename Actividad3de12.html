@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="3tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1 id="titulo">Calcular el area de un triangulo</h1>
+        <form action="">
+            <h2>Ingrese la Base</h2>
+            <input type="text" id="Base">
+            <h2>Ingrese la Altura</h2>
+            <input type="text" id="Altura">
+            <br>
+            <br>
+            <input type="button" value="Enviar" id="enviar" onclick="capturarNombre()">
+        </form>
+        <div id="mostrarNombre"></div>
+        <script>
+            function capturarNombre(){
+                let base = document.getElementById("Base").value
+                let Altura = document.getElementById("Altura").value
+                var nom = "El Area es: "+(base * Altura) / 2;
+                document.getElementById("mostrarNombre").innerHTML = nom
+            }
+        </script>
+</body>
+</html>

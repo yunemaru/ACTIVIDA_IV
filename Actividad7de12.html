@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSION DE GRADOS C A F</title>
+    <link rel="stylesheet" href="7tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1>Celsius a Fahrenhei</h1>
+        <label for="num">Grados celsius:</label>
+        <input type="text" id="num">
+        <button onclick="convertor()">Conversion</button>
+        <div id="resultado"></div>
+    
+        <script>
+            function convertor(){
+                const num = parseInt(document.getElementById("num").value);
+                const resultadoDiv = document.getElementById("resultado");
+
+                const con = (num * 1.8)+32;
+                resultado.textContent=`De celsius a Fahrenhei es: ${con} °F`;
+            }
+        </script>
+        </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICACION DE NUMERO PAR</title>
+    <link rel="stylesheet" href="6tarea.css">
+</head>
+<body>
+    <div id="box">
+        <h1>Numeros pares</h1>
+        <label for="num">Introduce un numero:</label>
+        <input type="text" id="num">
+        <button onclick="verificar()">Verificar</button>
+        <div id="resultado"></div>
+    
+        <script>
+            function verificar(){
+                const num = parseInt(document.getElementById("num").value);
+                const resultadoDiv = document.getElementById("resultado");
+
+                if(num % 2 ==0){
+                    resultado.textContent=`El numero ${num} es par.`;
+                }else{
+                    resultado.textContent=`El numero ${num} es impar.`;
+                }
+            }
+        </script>
+        </div>
+</body>
+</html>
